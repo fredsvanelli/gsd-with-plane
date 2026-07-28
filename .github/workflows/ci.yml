@@ -15,8 +15,8 @@ jobs:
         node: ['18', '20', '22']
     name: test (node ${{ matrix.node }})
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node }}
       # No dependencies and no lockfile — nothing to install.
@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     name: plugin.json version in sync
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - run: node scripts/sync-version.mjs --check
