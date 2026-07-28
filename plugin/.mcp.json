@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "plane": {
+      "command": "npx",
+      "args": ["-y", "@makeplane/plane-mcp-server"],
+      "env": {
+        "PLANE_API_KEY": "${PLANE_API_KEY}",
+        "PLANE_API_HOST_URL": "${PLANE_API_HOST_URL:-http://localhost}",
+        "PLANE_WORKSPACE_SLUG": "${PLANE_WORKSPACE_SLUG}"
+      }
+    }
+  }
+}

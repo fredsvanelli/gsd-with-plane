@@ -1,0 +1,38 @@
+{
+  "name": "@fredsvanelli/gsd-with-plane",
+  "version": "0.1.0",
+  "description": "Claude Code plugin that mirrors GSD's .planning/ as a Plane board (bidirectional sync, self-hosted friendly).",
+  "author": "Fred Vanelli <fredsvanelli@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "plugin",
+    ".claude-plugin"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "version": "node scripts/sync-version.mjs && git add plugin/.claude-plugin/plugin.json",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredsvanelli/gsd-with-plane.git"
+  },
+  "homepage": "https://github.com/fredsvanelli/gsd-with-plane#readme",
+  "bugs": {
+    "url": "https://github.com/fredsvanelli/gsd-with-plane/issues"
+  },
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "gsd",
+    "plane",
+    "self-hosted"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

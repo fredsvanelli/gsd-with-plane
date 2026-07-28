@@ -1,0 +1,9 @@
+{
+  "name": "gsd-with-plane",
+  "version": "0.1.0",
+  "description": "Mirrors GSD's .planning/ as a Plane board (milestones → Modules, phases → Work items, plans → Sub-items). Bidirectional sync via hooks; Plane's official MCP included for conversational queries. Works against any Plane instance (local Docker or self-hosted server) via PLANE_API_HOST_URL.",
+  "author": {
+    "name": "Fred Vanelli",
+    "email": "fredsvanelli@gmail.com"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "gsd-with-plane",
+  "description": "Marketplace for the gsd-with-plane plugin (ships inside the @fredsvanelli/gsd-with-plane npm package).",
+  "owner": {
+    "name": "Fred Vanelli",
+    "email": "fredsvanelli@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "gsd-with-plane",
+      "source": "./plugin",
+      "description": "Mirrors GSD's .planning/ as a Plane board (bidirectional sync via hooks + Plane's official MCP)."
+    }
+  ]
+}
